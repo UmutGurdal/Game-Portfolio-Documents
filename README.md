@@ -1,28 +1,47 @@
-# 🛠️ Game Engineering Portfolio & Documentation
+# Game Engineering Portfolio & Documentation
 
-Welcome to my game engineering repository. While the proprietary source code for my titles remains private, this repository serves as a technical deep dive into the architecture, design patterns, and development methodologies I utilize. Here, you will find engineering documents and system breakdowns that highlight how I tackle complex production challenges and optimize gameplay systems.
+Proprietary game source code stays private. This repository publishes **engineering case studies** so readers can evaluate what I build and own.
 
-## 📚 Repository Structure
-The documentation is categorized by technical domain to make navigation intuitive:
+## How to navigate
 
-* **`Architecture/`** - High-level system designs, event-driven structures, and core loop paradigms.
-* **`Optimization/`** - Memory profiling, performance tuning, and rendering improvements.
-* **`Systems/`** - Deep dives into specific gameplay mechanics, AI state machines, and data management.
-* **`Pipelines/`** - Build automation, CI/CD setups, and deployment workflows.
+Docs are organized **by category, then by game** — not by abstract topic.
 
-## 🛠️ Core Technologies
-The engineering solutions detailed in this repository primarily revolve around:
-* **Game Engine:** Unity
-* **Languages:** C#
-* **Architecture:** Event-Driven Architecture, Component-Based Design, Microservices
+| Category | Pixel Car Racing | Merge Car Racing | Pocket Kingdom Idle |
+|----------|------------------|-----------------|---------------------|
+| **Games** (overview) | [case study](Games/pixel-car-racing.md) | [case study](Games/merge-car-racing.md) | [case study](Games/pocket-kingdom-idle.md) |
+| **Architecture** | [doc](Architecture/pixel-car-racing.md) | [doc](Architecture/merge-car-racing.md) | [doc](Architecture/pocket-kingdom-idle.md) |
+| **Systems** | [doc](Systems/pixel-car-racing.md) | [doc](Systems/merge-car-racing.md) | [doc](Systems/pocket-kingdom-idle.md) |
+| **Optimization** | [doc](Optimization/pixel-car-racing.md) | [doc](Optimization/merge-car-racing.md) | [doc](Optimization/pocket-kingdom-idle.md) |
 
-## 📖 Document Format
-Each engineering document follows a consistent technical case study format:
-1. **The Context:** The feature requirement or system goal.
-2. **The Problem:** The specific technical hurdle, memory constraint, or bottleneck.
-3. **The Approach:** Evaluated alternatives and architectural decisions.
-4. **The Solution:** The implemented architecture, structural snippets, and design patterns.
-5. **The Result:** Measurable performance gains, scaling improvements, or workflow optimizations.
+`Pipelines/` holds high-level release notes (not per-game source).
 
-## 📫 Connect
-Feel free to open an issue or reach out to discuss game architecture, optimization techniques, or engineering practices.
+## Titles at a glance
+
+| Game | Genre | Signature story |
+|------|--------|-----------------|
+| Pixel Car Racing | 2D physics racer | Torque wheels, RPM/gears, data-driven car roster |
+| Merge Car Racing | Merge/idle + highway race | Dual-mode progression, persistent board, streamed traffic |
+| Pocket Kingdom Idle | Idle combat | Custom large-number economy, prestige, stage scaling |
+
+## Document format (Games overviews)
+
+1. **The Context** — product/system goal  
+2. **The Problem** — constraints and failure modes  
+3. **The Approach** — options considered  
+4. **The Solution** — architecture strategy (no proprietary source dumps)  
+5. **The Result** — shipping / scale / performance outcomes  
+
+## Core technologies
+
+- **Engine:** Unity (incl. Unity 6 / 6000.x) · **Language:** C#
+- **Patterns:** Manager composition, ScriptableObjects, events, object pooling
+- **Platform:** Google Play Games, UMP, LevelPlay / AdMob, cloud saves, localization
+
+## What this repo is not
+
+- Not a source mirror of the games
+- Not keystores, API secrets, or private dashboards
+
+## Connect
+
+Open an issue to discuss game architecture, mobile live-ops, idle economies, or vehicle gameplay systems.
